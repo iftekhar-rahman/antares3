@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>CarDetails</title>
+        
+        <!--Theme specific styles-->
+        <link href="../theme/css/antares3.min.css" rel="stylesheet">
+        <link href="css/client.min.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="../theme/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../theme/js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <!-- Add "header2" class here to get the header with curve and off canvas menu -->
+    <body class=" ">
+
+        <!-- offcanvas-menu-wrap starts -->
+        <div class="offcanvas-menu-wrap">
+            <div class="menu-close">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+            </div>
+            <div class="offcanvas-menu">
+                <div class="offcanvas-logo">
+                    <a href="index.html"><img src="img/black-logo.png" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Prestige Used Cars</a></li>
+                    <li><a href="#">Sold Cars</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Sell Your Car</a></li>
+                    <li><a href="#">Aftercare</a></li>
+                </ul>
+                <div class="newsletter-signup">
+                    <h4>Newsletter</h4>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" name="fullname" placeholder="Full name">
+                            </div>
+                            <div class="col">
+                                <input type="email" name="emailaddress" placeholder="Email Address">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="offcanvas-footer-menu">
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Finance Disclaimer</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="offcanvas-social-icons">
+                    <div class="phone">
+                        <a href="tel:01423325800">01423325800</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="off-canvas-overlay"></div>
+        <!-- offcanvas-menu-wrap ends -->
+
+        <!-- header starts -->
+        <div class="header">
+            <!-- header-top-area starts -->
+            <div class="header-top-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="stars">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <a href="#">See Our Reviews </a>
+                            </div>
+                            <div class="offcanvas-trigger-wrap">
+                                <div class="offcanvas-trigger d-flex justify-content-end">
+                                    <div class="d-none d-md-block">Prestige Used Cars</div>
+                                    <div class="trigger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 header-right2">
+                            <div class="header-right d-flex justify-content-end">
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                                <div class="header-phone position-relative">
+                                    <a href="tel:01423325800"><i class="fa fa-phone"></i> <span class="d-none d-lg-block">01423325800</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- header-top-area ends -->
+            <!-- header-area starts -->
+            <div class="header-area d-flex align-items-center">
+                <div class="container">
+                    <!-- phone icon only below 991 break point -->
+                    <a class="mobile-phone-icon d-block d-lg-none" href="#"><i class="fa fa-phone"></i></a>
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="site-logo d-flex align-items-center">
+                                <a href="index.html"><img src="img/white-logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mainmenu text-right">
+                                <ul id="menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Prestige Used Cars</a>
+                                        <ul>
+                                            <li><a href="#">Dropdown Menu</a></li>
+                                            <li><a href="#">Dropdown Menu</a></li>
+                                            <li><a href="#">Dropdown Menu</a></li>
+                                            <li><a href="#">Dropdown Menu</a></li>
+                                            <li><a href="#">Dropdown Menu</a></li>
+                                            <li><a href="#">Dropdown Menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Sold Cars</a></li>
+                                    <li><a href="#">Finance</a></li>
+                                    <li><a href="#">Sell Your Car</a></li>
+                                    <li><a href="#">Aftercare</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- section-shape-wrap starts -->
+                    <div class="section-shape-wrap position-relative">
+                        <div class="section-shape text-center">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="715px" height="83px" viewBox="0 0 715 83" enable-background="new 0 0 715 83" xml:space="preserve">
+                            <g id="shape.psd">
+                                <defs>
+                                    <rect id="SVGID_1_" x="-197.5" width="1110" height="83"/>
+                                </defs>
+                                <clipPath id="SVGID_2_">
+                                    <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                                </clipPath>
+                                <g id="WebsiteBg" clip-path="url(#SVGID_2_)">
+                                    <g>
+                                        <path fill="#000000" fill-rule="evenodd" clip-rule="evenodd" d="M0.398,0c107.711,4.725,90.567,83,195.187,83c78.252,0,288.157,0,323.83,0
+                                            c104.62,0,87.475-78.275,195.187-83H0.398z"/>
+                                    </g>
+                                </g>
+                            </g>
+                            </svg><!-- svg ends -->
+                        </div>
+                    </div><!-- section-shape-wrap ends -->
+                </div>
+            </div><!-- header-area ends -->
+        </div>
+        <!-- header ends -->
+
+        <!-- car-slider-area starts -->
+        <!-- <div class="car-slider-area position-relative">
+            <div class="slide-shape" style="background-image: url(./img/slide-spahe.png);">
+                <a class="video-btn" href="https://www.youtube.com/watch?v=XrIrLshAtlk"><i class="fa fa-play"></i> Video</a>
+                <a href="#"><i class="fa fa-car"></i> 360</a>
+            </div>
+            <a class="gallery-link" href="#gallery1"><i class="fa fa-search"></i> Zoom</a>
+            <div id="gallery1" class="owl-carousel slider-carousel gallery">
+                <div class="single-car-slide">
+                    <a class="popup-link" href="#" class="position-relative">
+                        <img class="slide-img" src="img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="single-car-slide">
+                    <a class="popup-link"  href="#">
+                        <img class="slide-img" src="img/mediaidb62d3a057a2f45f2b0c580373171b789.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="single-car-slide">
+                    <a class="popup-link"  href="#">
+                        <img class="slide-img" src="img/mediaidcd60844373994393b7ba05bb069f4e71.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div> -->
+        <!-- car-slider-area ends -->
+
+        <!-- price-area starts -->
+        <div class="price-area">
+            <!-- price-top-area starts -->
+            <!-- <div class="price-top-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="price-top-content d-flex justify-content-between">
+                                <div class="left">
+                                    <a href="#"><i class="fa fa-angle-left"></i> See all Bentley Continental</a>
+                                </div>
+                                <div class="right text-right">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- price-top-area ends -->
+            <!-- call-to-action-area starts -->
+            <div class="call-to-action-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 left">
+                            <h2>Bentley Continental</h2>
+                            <p>GT 6.0 W12 First Edition Auto - 2019(68)</p>
+                        </div>
+                        <div class="col-lg-8 d-flex justify-content-end align-items-center">
+                            <span class="price-tag"><strong>£379,995</strong> or from <strong>£4000</strong> per month</span>
+                            <div class="call-to-action text-right">
+                                <a href="#" class="boxed-btn">Enquiry <i class="fa fa-angle-right"></i></a>
+                                <a href="#" class="boxed-btn">Finance <i class="fa fa-angle-right"></i></a>
+                                <a href="#" class="boxed-btn">Reserve Online <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- call-to-action-area ends -->
+        </div>
+        <!-- price-area ends -->
+
+        <!-- submenu-area starts -->
+        <div class="submenu-area sticky-submenu">
+            <div class="container">
+                <div class="row">
+                    <div id="sub-navbar" class="col-lg-12">
+                        <ul>
+                            <li class="smooth-menu list-one"><a class="nav-link" href="#specification_section"><img src="img/sub-icon-1.png" alt=""> Specification</a></li>
+                            <li class="smooth-menu"><a class="nav-link" href="#part_exchange_section"><img src="img/sub-icon-3.png" alt=""> Part Exchange</a></li>
+                            <li class="smooth-menu"><a class="nav-link" href="#finance_section"><img src="img/sub-icon-2.png" alt=""> Finance</a></li>
+                            <li class="smooth-menu"><a class="nav-link" href="#testimonial_section"><img src="img/sub-icon-3.png" alt=""> Reviews</a></li>
+                            <li class="smooth-menu"><a class="nav-link" href="#gallery_section"><img src="img/sub-icon-4.png" alt=""> Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- submenu-area ends -->
+
+        <!-- .specification starts -->
+        <div id="specification_section" class="specification-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <!-- .table-content-wrap starts -->
+                        <div class="table-content-wrap">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="section-title text-center">
+                                        <h2>Vehicle Specification</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- single-table-item starts -->
+                                    <div class="single-table-item">
+                                        <div class="table-header d-flex align-items-center">
+                                            <span class="head-icon"><img src="./img/icons/spec.svg" alt=""></span> Car Data
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Price</td>
+                                                    <td>£17,495</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mileage</td>
+                                                    <td>32,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Year</td>
+                                                    <td>2016</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Make</td>
+                                                    <td>Mercedes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Model</td>
+                                                    <td>Gla-class</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Variant</td>
+                                                    <td>Gla 200 D Amg Line Premium</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Body Type</td>
+                                                    <td>Estate</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Colour</td>
+                                                    <td>Blue</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fuel Type</td>
+                                                    <td>Diesel</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Gearbox</td>
+                                                    <td>Automatic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>No. of Gears</td>
+                                                    <td>7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td>2.2L</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Road Fund Tax (12 Months)</td>
+                                                    <td>£20.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doors</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Gross Vehicle Weight</td>
+                                                    <td>2020kg</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- single-table-item ends -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- single-table-item starts -->
+                                    <div class="single-table-item">
+                                        <div class="table-header d-flex align-items-center">
+                                            <span class="head-icon"><img src="./img/icons/speed.svg" alt=""></span> Performance
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td>BHP</td>
+                                                    <td>134</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td>2.2L</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Top Speed</td>
+                                                    <td>127 mph</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- single-table-item ends -->
+                                    <!-- single-table-item starts -->
+                                    <div class="single-table-item">
+                                        <div class="table-header">
+                                            <span class="head-icon"><img src="./img/icons/dimensions.svg" alt=""></span> Dimensions
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Length</td>
+                                                    <td>4417m</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Width</td>
+                                                    <td>1804m</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Height</td>
+                                                    <td>1494m</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- single-table-item ends -->
+                                    <!-- single-table-item starts -->
+                                    <div class="single-table-item">
+                                        <div class="table-header">
+                                            <span class="head-icon"><img src="./img/icons/eco.svg" alt=""></span> Economy
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Average MPG</td>
+                                                    <td>64.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Urban</td>
+                                                    <td>54.3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Extra Urban</td>
+                                                    <td>72.4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CO2 Emissions</td>
+                                                    <td>115</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- single-table-item ends -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .table-content-wrap ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .specification ends -->
+
+        <!-- car-valuation-area starts -->
+        <div id="part_exchange_section" class="car-valuation-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title text-center">
+                            <h2>Free Instant Car Valuation</h2>
+                        </div>
+                        <div class="car-valuation-content">
+                            <div class="d-flex">
+                                <div class="single-valuation-item">
+                                    <label for="reg">Enter Reg</label>
+                                    <input id="reg" type="text" placeholder="Registation" name="registation">
+                                </div>
+                                <div class="single-valuation-item">
+                                    <label for="mileage">Enter Mileage</label>
+                                    <input id="mileage" type="text" placeholder="Mileage" name="mileage">
+                                </div>
+                                <div class="single-valuation-item value-btn d-flex align-items-end">
+                                    <button class="boxed-btn" type="submit" value="submit">Value my car</button>
+                                </div>
+                            </div>
+                            <div class="valuation-text text-center">
+                                <p>Enter your Registration Number to find your vehicle details or <a href="#">click here</a> to search for your vehicle manually</p>
+                            </div>
+                        </div>
+                        <div class="valuation-bottom-text text-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- section-shape-wrap starts -->
+                <div class="section-shape-wrap position-relative">
+                    <div class="section-shape text-center">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="715px" height="83px" viewBox="0 0 715 83" enable-background="new 0 0 715 83" xml:space="preserve">
+                        <g id="shape.psd">
+                            <defs>
+                                <rect id="SVGID_1_" x="-197.5" width="1110" height="83"/>
+                            </defs>
+                            <clipPath id="SVGID_2_">
+                                <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                            </clipPath>
+                            <g id="WebsiteBg" clip-path="url(#SVGID_2_)">
+                                <g>
+                                    <path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd" d="M0.398,0c107.711,4.725,90.567,83,195.187,83c78.252,0,288.157,0,323.83,0
+                                        c104.62,0,87.475-78.275,195.187-83H0.398z"/>
+                                </g>
+                            </g>
+                        </g>
+                        </svg><!-- svg ends -->
+                    </div>
+                </div><!-- section-shape-wrap ends -->
+            </div>
+        </div>
+        <!-- car-valuation-area ends -->
+
+        <!-- finance-area starts -->
+        <div id="finance_section" class="finance-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title text-center">
+                            <h2>Finance</h2>
+                        </div>
+                        <div class="d-flex">
+                            <!-- single-finance-dropdown starts -->
+                            <div class="single-finance-dropdown">
+                                <label for="financetype">Finance Type</label>
+                                <select name="financetype" id="financetype">
+                                    <option value="">Hire purchase</option>
+                                    <option value="">Hire purchase</option>
+                                    <option value="">Hire purchase</option>
+                                    <option value="">Hire purchase</option>
+                                    <option value="">Hire purchase</option>
+                                    <option value="">Hire purchase</option>
+                                </select>
+                            </div><!-- single-finance-dropdown ends -->
+                            <!-- single-finance-dropdown starts -->
+                            <div class="single-finance-dropdown">
+                                <label for="financetype">Term (months)</label>
+                                <select name="financetype" id="financetype">
+                                    <option value="">48 months</option>
+                                    <option value="">48 months</option>
+                                    <option value="">48 months</option>
+                                    <option value="">48 months</option>
+                                    <option value="">48 months</option>
+                                    <option value="">48 months</option>
+                                </select>
+                            </div><!-- single-finance-dropdown ends -->
+                            <!-- single-finance-dropdown starts -->
+                            <div class="single-finance-dropdown">
+                                <label for="financetype">Deposit</label>
+                                <select name="financetype" id="financetype">
+                                    <option value="">£379,995</option>
+                                    <option value="">£379,995</option>
+                                    <option value="">£379,995</option>
+                                    <option value="">£379,995</option>
+                                    <option value="">£379,995</option>
+                                    <option value="">£379,995</option>
+                                </select>
+                            </div><!-- single-finance-dropdown ends -->
+                        </div>
+                        <div class="row finance-table">
+                            <div class="col-lg-8">
+                                <div class="single-table-item">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>On the road price</td>
+                                                <td>£379,995</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Customer Cash Deposit</td>
+                                                <td>£179,995</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Amount of credit</td>
+                                                <td>£279,995</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Term of agreement</td>
+                                                <td>48 months</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total amount payable</td>
+                                                <td>£79,995</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Representative APR</td>
+                                                <td>£9,995</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fixed rate of interest</td>
+                                                <td>6.72%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="finance-btns d-flex justify-content-between">
+                                    <a class="boxed-btn" href="#">Free Crefit Check <i class="fa fa-angle-right"></i></a>
+                                    <a class="boxed-btn" href="#">Apply for Finance <i class="fa fa-angle-right"></i></a>
+                                    <a class="boxed-btn" href="#">Enquire Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="right-content">
+                                    <h6>Representative Example*</h6>
+                                    <h5>48 Monthly Payments</h5>
+                                    <div class="price-tag">£37,995 <span>Per month</span></div>
+                                    <a href="#" class="boxed-btn">Add part Exchange</a>
+                                    <div class="part-exchange-text">
+                                        <p>Please enter the details of the vehicle that you’d like to part exchange</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="finance-bottom-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- finance-area ends -->
+
+        <!-- service-plan-area starts -->
+        <!-- <div class="service-plan-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="service-plan-content">
+                            <h3>Used Car service plan  I  Caring for your new purchase</h3>
+                            <div class="d-flex justify-content-center">
+                                <div class="single-plan-content">
+                                    <h3>2 Years</h3>
+                                    <h2>Service Plan</h2>
+                                </div>
+                                <div class="single-plan-content">
+                                    <h2>Save <span class="upto">Up<br/>To</span> £150</h2>
+                                    <p>Against normal price</p>
+                                </div>
+                                <div class="single-plan-content">
+                                    <h2>Only <span class="only-tag">£15 <span>.99</span></span> <br/>Per month</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- service-plan-area ends -->
+
+        <!-- testimonial-area starts -->
+        <div id="testimonial_section" class="testimonial-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <div class="section-title">
+                            <h2>Customer Reviews</h2>
+                        </div>
+                        <div class="testimonial-quote">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <div class="owl-carousel testimonial-wrap">
+                            <div class="single-testimonial-item">
+                                <h4>I have been purchasing vehicles from Alexanders since the early 1990's</h4>
+                                <p>They are always friendly and go out of theirway to help. If there are any problems they always put them right however large or small. Wouldrecommend to anyone.</p>
+                                <div class="stars">
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="single-testimonial-item">
+                                <h4>I have been purchasing vehicles here since the early 1980's</h4>
+                                <p>They are always friendly and go out of theirway to help. If there are any problems they always put them right however large or small. If there are any problems they always put them right however large or small. Would recommend to anyone.</p>
+                                <div class="stars">
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="single-testimonial-item">
+                                <h4>I have been purchasing vehicles here since the early 1980's</h4>
+                                <p>They are always friendly and go out of theirway to help. If there are any problems they always put them right however large or small. Wouldrecommend to anyone.</p>
+                                <div class="stars">
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- testimonial-area ends -->
+
+        <!-- gallery-area starts -->
+        <div id="gallery_section" class="gallery-area section-padding">
+            <div class="gallery-container">
+                <div class="gallery-row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="section-title text-center">
+                                    <h2>Gallery Slideshow</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-carousel gallery-col">
+                        <!-- single-gallery-conten starts -->
+                        <div class="single-gallery-content">
+                            <div class="single-gallery-item large-gallery-item">
+                                <a class="popup-link2" href="img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg" style="background-image: url(./img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaid9c2359c669e4460081b185b5996af840.jpg" style="background-image: url(./img/mediaid9c2359c669e4460081b185b5996af840.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg" style="background-image: url(./img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaidb62d3a057a2f45f2b0c580373171b789.jpg" style="background-image: url(./img/mediaidb62d3a057a2f45f2b0c580373171b789.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaidcd60844373994393b7ba05bb069f4e71.jpg" style="background-image: url(./img/mediaidcd60844373994393b7ba05bb069f4e71.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!-- single-gallery-conten ends -->
+                        <!-- single-gallery-conten starts -->
+                        <div class="single-gallery-content">
+                            <div class="single-gallery-item large-gallery-item">
+                                <a class="popup-link2" href="img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg" style="background-image: url(./img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaid9c2359c669e4460081b185b5996af840.jpg" style="background-image: url(./img/mediaid9c2359c669e4460081b185b5996af840.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg" style="background-image: url(./img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaidb62d3a057a2f45f2b0c580373171b789.jpg" style="background-image: url(./img/mediaidb62d3a057a2f45f2b0c580373171b789.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaidcd60844373994393b7ba05bb069f4e71.jpg" style="background-image: url(./img/mediaidcd60844373994393b7ba05bb069f4e71.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!-- single-gallery-conten ends -->
+                        <!-- single-gallery-conten starts -->
+                        <div class="single-gallery-content">
+                            <div class="single-gallery-item large-gallery-item">
+                                <a class="popup-link2" href="img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg" style="background-image: url(./img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaid9c2359c669e4460081b185b5996af840.jpg" style="background-image: url(./img/mediaid9c2359c669e4460081b185b5996af840.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg" style="background-image: url(./img/mediaida8b91f26e3ad46649bb1777204ff579f.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaidb62d3a057a2f45f2b0c580373171b789.jpg" style="background-image: url(./img/mediaidb62d3a057a2f45f2b0c580373171b789.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-gallery-item">
+                                <a class="popup-link2" href="img/mediaidcd60844373994393b7ba05bb069f4e71.jpg" style="background-image: url(./img/mediaidcd60844373994393b7ba05bb069f4e71.jpg);">
+                                    <div class="gallery-hover">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!-- single-gallery-conten ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gallery-area ends -->
+
+        <!-- footer-area starts -->
+        <div class="footer-area vdp-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!-- single-quick-link-item starts -->
+                        <div class="single-quick-link-item">
+                            <h5>Pre-Owned</h5>
+                            <ul>
+                                <li><a href="#">Used Aston Martin</a></li>
+                                <li><a href="#">Used Audi</a></li>
+                                <li><a href="#">Used Maserati</a></li>
+                                <li><a href="#">McLaren For Sale</a></li>
+                            </ul>
+                        </div><!-- single-quick-link-item ends -->
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!-- single-quick-link-item starts -->
+                        <div class="single-quick-link-item">
+                            <h5>Pre-Owned</h5>
+                            <ul>
+                                <li><a href="#">Used Bentley</a></li>
+                                <li><a href="#">Rolls-Royce For Sale</a></li>
+                                <li><a href="#">Used Ferrari</a></li>
+                            </ul>
+                        </div><!-- single-quick-link-item ends -->
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!-- single-quick-link-item starts -->
+                        <div class="single-quick-link-item">
+                            <h5>Pre-Owned</h5>
+                            <ul>
+                                <li><a href="#">sed Jaguar</a></li>
+                                <li><a href="#">Used Land Rover</a></li>
+                                <li><a href="#">Used Porsche</a></li>
+                            </ul>
+                        </div><!-- single-quick-link-item ends -->
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!-- single-quick-link-item starts -->
+                        <div class="single-quick-link-item">
+                            <h5>Pre-Owned</h5>
+                            <ul>
+                                <li><a href="#">Range Rovers</a></li>
+                                <li><a href="#">Supercars For Sale</a></li>
+                                <li><a href="#">Lamborghini For Sale</a></li>
+                            </ul>
+                        </div><!-- single-quick-link-item ends -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- footer-info-section starts -->
+                        <div class="footer-info-section">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="single-info-item phone-number position-relative">
+                                        <a href="tel:01423226591">
+                                            <span class="absolute-icon"><i class="fa fa-mobile"></i></span>
+                                            <h6>Give us a call</h6>
+                                            01423226591
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="single-info-item findus position-relative">
+                                        <a href="#">
+                                            <span class="absolute-icon"><i class="fa fa-map-marker"></i></span>
+                                            <h6>Find us</h6>
+                                            <p>Barr Lane Ind Estate, Boroughbridge, North Yorkshire YO51 9LS, United Kingdom</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-info-item emailaddress position-relative">
+                                        <a href="mailto:sales@alexandersprestige.co.uk">
+                                            <span class="absolute-icon"><i class="fa fa-envelope-o"></i></span>
+                                            <h6>send us an email</h6>
+                                            sales@alexandersprestige.co.uk
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="single-info-item">
+                                        <h5>Follow Us</h5>
+                                        <div class="footer-social-icons">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="single-info-item time">
+                                        <h5>Open Hours</h5>
+                                        <p>Mon to FRI :  08:00 - 18:30</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="single-info-item time">
+                                        <h5 style="opacity: 0;" class="d-none d-lg-block">empty title</h5>
+                                        <p>Saturday : 08:00 - 17:00</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="single-info-item time">
+                                        <h5 style="opacity: 0;" class="d-none d-lg-block">empty title</h5>
+                                        <p>Sunday : 11:00 - 16:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- footer-info-section ends -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-section d-flex justify-content-between">
+                            <div class="copyright-left">
+                                <a href="#">Privacy Policy</a>
+                            </div>
+                            <div class="copyright-right">
+                                <span class="ahq">
+                                    Designed &amp; Powered by 
+                                    <a href="#"><img src="img/autohq.png" alt="Car Dealer Websites"></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-area ends -->
+
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fa fa-angle-up"></i></a>
+
+        <!--Libraries-->
+        <script src="../theme/js/bootstrap.bundle.min.js"></script>       
+
+         <!--Plugins-->
+         <script src="../theme/js/perfect-scrollbar.jquery.min.js"></script>
+         <script src="../theme/js/jquery.nice-select.min.js"></script>
+         <script src="../theme/js/owl.carousel.min.js"></script>
+         <script src="../theme/js/aos.js"></script>
+         <script src="../theme/js/jqueryUI.js"></script>
+         <script src="../theme/js/jquery.slicknav.min.js"></script>
+         <script src="../theme/js/slick.min.js"></script>
+         <script src="../theme/js/jquery.magnific-popup.min.js"></script>
+         <script src="../theme/js/jquery.sticky.js"></script>
+         <script src="../theme/js/jquery.unveil.js"></script>
+
+        <!--Active & Custom JS-->
+        <script src="../theme/js/main.js"></script>
+    </body>
+</html>

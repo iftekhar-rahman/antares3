@@ -1,0 +1,394 @@
+/*==============Common CSS===================*/
+
+body {
+    font-family: $body-font;
+    font-size: $body-font-size;
+    color: $body-color;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p {
+    &:last-child{
+    	margin-bottom: 0;
+    }
+}
+// a, button, img, input, span {
+//     @extend %basetransition; 
+// }
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+    @extend %borderradius5;
+    @extend %borderzero;
+    height: 50px;
+    padding: 13px 20px;
+}
+// .form-group {
+//     margin-bottom: 25px;
+//     .form-control{
+//         &:focus {
+//             box-shadow: none;
+//             @extend %primary-border-color;
+//         }
+//         &:hover {
+//             @extend %primary-border-color;
+//         }
+//     }
+// }
+input[type=submit], button[type=submit]{
+    @extend %cursorpointer;
+}
+input, textarea{
+	@include placeholder{
+		color: $body-color;
+	}
+}
+textarea {
+    height: 150px;
+    padding: 10px 20px;
+    @extend %w100;
+    // margin-bottom: -7px;
+    border-color: #ced4da;
+    @extend %basetransition1;
+    &:focus {
+        @extend %primary-border-color;
+    }
+    &:hover {
+        @extend %primary-border-color;
+    }
+}
+
+// .section-padding
+.section-padding{
+    padding: 80px 0;
+    @include all-below-med{
+        padding: 50px 0;
+    }
+}
+
+/*========.section-title=========*/ 
+.section-title {
+    color: #51555c;
+    font-size: 14px;
+    @extend %uppercase;
+    font-weight: 400;
+    // @include all-below-med{
+    //     margin-bottom: 30px;
+    // }
+    h2{
+        @extend %black-color;
+        font-size: 36px;
+        line-height: 36px;
+        @extend %capitalize;
+        font-family: $title-font;
+        @include all-below-med{
+            font-size: 30px;
+        }
+        @include all-below-mobile-lg{
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+}
+// .section-shape
+.section-shape {
+    @extend %posabsolute;
+    left: 0;
+    bottom: -160px;
+    right: 0;
+    @extend %zindex2;
+    @include all-below-med{
+        bottom: -78px;
+    }
+    @include mx-mobile-lg{
+        bottom: -64px;
+    }
+    @include all-mx-mobile{
+        bottom: -43px;
+    }
+    svg{
+        width: 100%;
+        height: 80px;
+        @include all-below-mobile-lg{
+            height: 72px;
+        }
+        @include all-mx-mobile{
+            height: 50px;
+        }
+    }
+    .section-title{
+        margin-bottom: 0;
+        margin-top: -36px;
+    }
+}
+
+/*======.owl-dots customization=======*/
+.owl-dots {
+    @extend %textcenter;
+    margin-top: 30px;
+    div {
+        height: 20px;
+        width: 20px;
+        background-color: #23222A;
+        @extend %displayinline;
+        margin: 0 4px;
+        @extend %borderradiusfiftypercent;
+        &.active {
+            @extend %secondary-bg-color;
+        }
+    }
+}
+    
+/*=====owl nav customization======*/
+.owl-nav div {
+    left: -45px;
+    top: 50%;
+    line-height: 65px;
+    margin-top: -32px;
+    width: 45px;
+    height: 65px;
+    font-size: 30px;
+    border-radius: 5px 0 0 5px;
+    @extend %posabsolute;
+    @extend %displayinline;
+    @extend %textcenter;
+    @extend %basetransition1;
+    @extend %white-color;
+    @extend %secondary-bg-color;
+    @include mx-large-desktops{
+        left: -30px;
+        width: 30px;
+    }
+    @include mx-desktops{
+        left: -30px;
+        width: 30px;
+    }
+    &.owl-next {
+        left: auto;
+        right: -45px;
+        border-radius: 0px 5px 5px 0px;
+        @include mx-large-desktops{
+            left: auto;
+            right: -30px;
+        }
+        @include mx-desktops{
+            left: auto;
+            right: -30px;
+        }
+    }
+    &:hover {
+        @extend %primary-color;
+    }
+}
+
+// select {
+//     font-size: 19px;
+//     color: #0da0f4;
+//     background-color: #fff;
+//     padding: 8px 10px;
+// }
+
+/*========.nice-select=============*/ 
+.nice-select {
+    @extend %w100;
+    @extend %borderradius0;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    border: 0;
+    @extend %uppercase;
+    font-size: 13px;
+    font-weight: 300;
+    color: #191c22;
+    @include all-below-mobile-lg{
+        height: 48px;
+        line-height: 48px;
+    }
+    .list {
+        @extend %w100;
+        box-shadow: none;
+        border: 1px solid #ced4da;
+        max-height: 405px;
+        @extend %borderradius0;
+    }
+    &:focus {
+        @extend %primary-border-color;
+    }
+    &:hover {
+        @extend %primary-border-color;
+    }
+    &:after{
+        right: 25px;
+        border-color: #ced4da;
+        width: 10px;
+        height: 10px;
+        margin-top: -6px;
+    }
+    &:hover:after {
+        @extend %primary-border-color;
+    }
+}
+// .ps__scrollbar-y {
+//     background-color: #99822c !important;
+// }
+
+
+/*========== default checkbox style =============*/
+input[type=checkbox]{
+    display:none;
+}
+input[type=checkbox] + label:before {
+    border: 1px solid rgb(255, 255, 255);
+    content: "";
+    @extend %displayinline;
+    font-size: 30px;
+    height: 20px;
+    line-height: 11px;
+    margin: -4px 5px 0 0;
+    @extend %textcenter;
+    vertical-align: middle;
+    width: 20px;
+    @extend %borderradiusfiftypercent;
+    @extend %white-bg-color;
+}
+input[type=checkbox]:checked + label:before {
+    content: "\f00c";
+    font-family: fontawesome;
+    color: #1d1d1b;
+    font-size: 15px;
+    padding-top: 4px;
+}
+label {
+    margin-right: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+/*========== default radio button style =============*/
+input[type=radio]{
+    display:none;
+}
+input[type=radio] + label:before {
+    border: 1px solid rgb(255, 255, 255);
+    content: "";
+    @extend %displayinline;
+    font-size: 30px;
+    height: 20px;
+    line-height: 11px;
+    margin: -4px 5px 0 0;
+    @extend %textcenter;
+    vertical-align: middle;
+    width: 20px;
+    @extend %borderradiusfiftypercent;
+    @extend %white-bg-color;
+}
+input[type=radio]:checked + label:before {
+    content: "\f00c";
+    font-family: fontawesome;
+    color: #0F4A6E;
+    font-size: 15px;
+    padding-top: 4px;
+}
+label{
+    @extend %body-color;
+}
+
+.stars {
+    span {
+        color: #ffffff;
+        margin-right: 4px;
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        display: inline-block;
+        background-color: #00B67A;
+    }
+}
+
+
+
+
+// range slider
+.range-slider {
+    padding: 30px 0 0;
+}
+.pm-range-slider {
+    height: 8px;
+    @extend %secondary-bg-color;
+    @extend %posrelative;
+    @extend %borderradius5;
+    &:before {
+        height: 19px;
+        width: 19px;
+        @extend %secondary-bg-color;
+        @extend %pseudo;
+        @extend %borderradius50;
+        top: 50%;
+        transform: translate(-100%, -50%);
+        left: 9px;
+    }
+    &:after {
+        height: 19px;
+        width: 19px;
+        @extend %secondary-bg-color;
+        @extend %pseudo;
+        @extend %borderradius50;
+        top: 50%;
+        transform: translate(100%, -50%);
+        right: 10px;
+    }
+    .ui-slider-handle {
+        width: 19px;
+        height: 19px;
+        top: -5px;
+        @extend %secondary-bg-color;
+        border-radius: 100%;
+        transition: inherit;
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+    .ui-widget-header {
+        background-color: #EBEBEB;
+        @extend %h100;
+        top: 0;
+    }
+}
+.slider-price {
+    margin-top: 15px;
+    @extend %textcenter;
+    @extend %displayflex;
+    @extend %justifybetween;
+    input{
+        max-width: 50%;
+        background: none;
+        padding: 0;
+        border: 0;
+        height: auto;
+        @extend %body-color;
+        font-size: 14px;
+        margin-left: -14px;
+        &.max-price{
+            @extend %textright;
+            margin-right: -15px;
+        }
+    }
+}
+.slider-labels{
+    @extend %body-color;
+    @extend %uppercase;
+    font-size: 14px;
+    span {
+        @extend %posabsolute;
+        left: -13px;
+        top: -33px;
+        &.max-text {
+            left: auto;
+            right: -13px;
+        }
+    }
+}
+

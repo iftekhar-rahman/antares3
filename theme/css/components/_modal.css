@@ -1,0 +1,49 @@
+/* Modals */
+.modal-dialog {
+  margin-top: 100px;
+  max-width: 600px; }
+  .modal-dialog .modal-header {
+    padding: 10px 15px;
+    padding-right: 30px;
+    display: block;
+    border-radius: .2rem .2rem 0 0;
+    background-color: #094372; }
+    .modal-dialog .modal-header h3 {
+      color: white; }
+    .modal-dialog .modal-header .modal-title {
+      color: white; }
+    .modal-dialog .modal-header .close {
+      opacity: 1;
+      position: absolute;
+      right: 20px;
+      color: white;
+      cursor: pointer; }
+    .modal-dialog .modal-header .close:focus, .modal-dialog .modal-header .close:hover {
+      color: white; }
+  .modal-dialog .modal-body .socialModal h2 {
+    font-size: 25px;
+    line-height: 30px; }
+  .modal-dialog .modal-body .socialModal h4 {
+    font-size: 20px; }
+  .modal-dialog .modal-body .socialModal .social-icons a {
+    border: 1px solid #b2b2b2;
+    border-radius: 8px;
+    padding-top: 2px;
+    color: #b2b2b2;
+    display: inline-block;
+    font-size: 25px;
+    height: 44px;
+    line-height: 38px;
+    margin-right: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 44px; }
+  .modal-dialog .modal-body .socialModal input[type="text"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; }
+  .modal-dialog .modal-footer {
+    padding: 25px; }

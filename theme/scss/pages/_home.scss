@@ -1,0 +1,664 @@
+/*================Home Page CSS===============*/
+.homepage-slider-area, .single-slide-item{
+    height: 670px;
+    @include all-below-med{
+        height: 450px;
+    }
+    @include all-below-mobile-lg{
+        height: 330px;
+    }
+}
+.homepage-slider-area {
+    .single-slide-item {
+        @extend %backgroundimage;
+        @extend %zindex2;
+        &:after{
+            @extend %pseudo;
+            @extend %w100;
+            @extend %h100;
+            left: 0;
+            top: 0;
+            @extend %black-bg-color;
+            z-index: -1;
+            opacity: .3;
+        }
+        .slide-content{
+            margin-top: 180px;
+            @include all-below-med{
+                margin-top: 100px;
+            }
+            @include all-below-mobile-lg{
+                margin-top: 40px;
+            }
+            h2 {
+                @extend %white-color;
+                font-size: 44px;
+                font-family: $title-font;
+                @include mx-desktops{
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                    line-height: 1.3;
+                }
+                @include all-below-med{
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                }
+                @include all-below-mobile-lg{
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+            }
+            .slide-text {
+                @extend %black-bg-color;
+                @extend %white-color;
+                width: 490px;
+                font-size: 21px;
+                padding: 10px 15px;
+                .covid {
+                    color: #ea321a;
+                    font-weight: 700;
+                }
+                @include all-below-mobile-lg{
+                    width: 100%;
+                }
+            }
+            .boxed-btn {
+                margin-top: 15px;
+                @extend %secondary-border-color;
+                @extend %secondary-bg-color;
+                @extend %black-color;
+                @extend %borderradius50;
+                padding: 16px 35px;
+                @include all-below-med{
+                    margin-top: 15px;
+                    padding: 12px 30px;
+                }
+                @include all-below-mobile-lg{
+                    padding: 10px 25px;
+                    font-size: 13px;
+                }
+                &:hover{
+                    @extend %primary-border-color;
+                    @extend %primary-bg-color;
+                    @extend %white-color;
+                }
+            }
+        }
+    }
+    .owl-dots {
+        @extend %posabsolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        @include all-below-mobile-lg{
+            bottom: 15px;
+        }
+        div{
+            @include all-below-mobile-lg{
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+    .owl-nav div {
+        @extend %white-color;
+        @extend %primary-bg-color;
+        left: 0px;
+        line-height: 63px;
+        margin-top: -32px;
+        width: 45px;
+        height: 65px;
+        font-size: 40px;
+        padding-right: 5px;
+        border-radius: 0 5px 5px 0;
+        @include all-below-med{
+            // line-height: 49px;
+            // margin-top: -25px;
+            // width: 35px;
+            // height: 50px;
+            // font-size: 40px;
+            display: none;
+        }
+        // @include all-below-mobile-lg{
+        //     display: none;
+        // }
+        &.owl-next {
+            left: auto;
+            right: 0px;
+            padding-left: 5px;
+            padding-right: 0;
+            border-radius: 5px 0px 0px 5px;
+        }
+        &:hover {
+            @extend %white-color;
+            @extend %secondary-bg-color;
+        }
+    }
+}
+/* Owl Carousel Content animation */
+.owl-carousel {
+    @extend %displaynone;
+    @extend %posrelative;
+    @extend %w100;
+    z-index: 1;
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-carousel.owl-loaded {
+    @extend %displayblock;
+}
+.owl-carousel .owl-stage {
+    @extend %posrelative;
+    -ms-touch-action: pan-Y;
+    -moz-backface-visibility: hidden;
+}
+.owl-carousel .owl-stage::after {
+    @extend %displayblock;
+    height: 0;
+    clear: both;
+    line-height: 0;
+    content: '.';
+    visibility: hidden;
+}
+.owl-carousel .owl-stage-outer {
+    @extend %posrelative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    overflow: hidden;;
+}
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}  
+// Fade In Up keyframes
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 40%, 0);
+      transform: translate3d(0, 40%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 40%, 0);
+      transform: translate3d(0, 40%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+.homepage-slider-area .owl-item.active .fade-up{
+    animation: fadeInUp 1.5s 1;
+}
+
+
+
+// .stock-search-area
+.stock-search-area {
+    @extend %black-bg-color;
+    padding: 33px 0 38px;
+    @include all-below-med{
+        padding: 25px 0 30px;
+    }
+    .single-stock-search {
+        @extend %white-color;
+        h3 {
+            font-size: 30px;
+            margin-bottom: 5px;
+            @extend %capitalize;
+            @include all-below-med{
+                font-size: 28px;
+            }
+        }
+        label {
+            @extend %white-color;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .boxed-btn {
+            @extend %primary-color;
+            @extend %secondary-border-color;
+            @extend %secondary-bg-color;
+            padding: 13px 25px 12px;
+            @include mx-mobile-lg{
+                padding: 13px 15px 12px;
+            }
+            @include all-mx-mobile{
+                span{
+                    display: none;
+                }
+                padding: 13px 18px 12px;
+                width: 100%;
+            }
+            &:hover {
+                @extend %bgtransparent;
+                @extend %secondary-color;
+                @extend %secondary-border-color;
+            }
+            i {
+                margin: 0 3px 0 0px;
+            }
+        }
+        &.title {
+            @extend %uppercase;
+            font-size: 14px;
+            flex-basis: 25%;
+            @include all-below-med{
+                flex-basis: 100%;
+                margin-bottom: 15px;
+            }
+        }
+        &.select-make {
+            flex-basis: 50%;
+            @include all-below-med{
+                flex-basis: 65%;
+            }
+            @include mx-mobile-lg{
+                flex-basis: 60%;
+            }
+            @include all-mx-mobile{
+                flex-basis: 80%;
+            }
+        }
+        &.search-btn {
+            flex-basis: 25%;
+            @include all-below-med{
+                flex-basis: 35%;
+            }
+            @include mx-mobile-lg{
+                flex-basis: 40%;
+            }
+            @include all-mx-mobile{
+                flex-basis: 20%;
+            }
+        }
+    }
+}
+
+// services-area
+.services-area {
+    @include all-below-med{
+        padding-bottom: 0;
+    }
+    .service-bg {
+        height: 370px;
+        @extend %backgroundimage;
+        @include all-below-mobile-lg{
+            height: 270px;
+        }
+    }
+    .service-content {
+        margin: 45px 0 0 40px;
+        font-size: 18px;
+        @include all-below-med{
+            margin: 30px 0 50px;
+        }
+        .section-title {
+            h2 {
+                margin-bottom: 20px;
+                @include all-below-med{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .boxed-btn {
+            margin-top: 15px;
+        }
+        &.left-content{
+            margin: 60px 90px 0 0px;
+            @include all-below-med{
+                margin: 30px 0 50px;
+            }
+        }
+    }
+}
+
+
+// reviews-area
+.reviews-area{
+    @extend %black-bg-color;
+    padding: 120px 0 100px;
+    @include all-below-med{
+        padding: 101px 0 50px;
+    }
+    .section-title {
+        @extend %white-color;
+        margin-bottom: 70px;
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
+        h2 {
+            @extend %white-color;
+        }
+    }
+    .trustpilot-logo {
+        @extend %posabsolute;
+        left: 0;
+        right: 0;
+        top: -125px;
+        z-index: 3;
+        @include all-below-med{
+            top: -105px;
+        }
+        @include all-below-mobile-lg{
+            top: -110px;
+            img{
+                max-width: 180px;
+            }
+        }
+        @include all-mx-mobile{
+            top: -120px;
+        }
+    }
+    .single-review-item {
+        @extend %white-bg-color;
+        padding: 20px 22px 25px 23px;
+        font-size: 13px;
+        line-height: 1.6;
+        @include all-below-med{
+            padding: 20px 15px 20px 15px;
+        }
+        h4 {
+            font-size: 21px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        h5 {
+            font-size: 16px;
+            margin: 0;
+            @include mx-tablet{
+                font-size: 13px;
+            }
+        }
+        span {
+            font-size: 12px;
+        }
+        .stars {
+            margin-bottom: 13px;
+        }
+        .blog-content {
+            padding: 15px;
+        }
+    }
+}
+
+// .blog-area
+.blog-area {
+    background: #E6E6E6;
+    padding-bottom: 0;
+    .section-shape {
+        bottom: -80px;
+        @include all-below-mobile-lg{
+            bottom: -64px;
+        }
+        @include all-mx-mobile{
+            bottom: -43px;
+        }
+    }
+    .section-title {
+        margin-bottom: 50px;
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
+    }
+    .blog-content-wrapper{
+        padding-bottom: 180px;
+        @include all-below-med{
+            padding-bottom: 140px;
+        }
+    }
+    .single-blog-item {
+        @extend %white-bg-color;
+        .blog-content {
+            padding: 10px;
+            .blog-date{
+                margin-right: 5px;
+            }
+            a{
+                @extend %body-color;
+                &:hover{
+                    @extend %secondary-color;
+                }
+            }
+        }
+    }
+    .blog-signup-section {
+        @extend %posabsolute;
+        left: 0;
+        right: 0;
+        bottom: -35px;
+        z-index: 3;
+        @include all-mx-mobile{
+            bottom: -25px;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            @include all-below-med{
+                margin-bottom: 20px;
+                font-size: 28px;
+            }
+            @include all-below-mobile-lg{
+                margin-bottom: 10px;
+                font-size: 26px;
+                font-weight: 500;
+            }
+        }
+        .boxed-btn {
+            width: 225px;
+            border-radius: 50px;
+            @extend %primary-bg-color;
+            @extend %white-color;
+            @include all-mx-mobile{
+                width: 200px;
+            }
+            &:hover {
+                @extend %secondary-bg-color;
+                @extend %secondary-border-color;
+                @extend %black-color;
+            }
+        }
+    }
+}
+
+
+// .featured-area
+.featured-area {
+    @extend %black-bg-color;
+    padding-top: 130px;
+    @include all-below-mobile-lg{
+        padding-top: 80px;
+    }
+    .section-title {
+        h2 {
+            @extend %white-color;
+            margin-bottom: 50px;
+            @include all-below-med{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .single-featured-item {
+        @extend %white-bg-color;
+        .featured-car {
+            .featured-tag {
+                @extend %posabsolute;
+                left: 10px;
+                top: 0px;
+                @extend %black-color;
+                @extend %uppercase;
+                @extend %secondary-color;
+                font-weight: 500;
+                padding: 6px 10px 5px;
+                font-size: 13px;
+                @extend %zindex2;
+                &:after {
+                    @extend %pseudo;
+                    left: 0;
+                    bottom: -3px;
+                    @extend %secondary-color;
+                    width: 50%;
+                    height: 10px;
+                    transform: skew(0deg, -7deg);
+                    z-index: -1;
+                }
+                &:before {
+                    @extend %pseudo;
+                    right: 0px;
+                    bottom: -3px;
+                    width: 50%;
+                    height: 10px;
+                    @extend %secondary-color;
+                    transform: skew(0deg, 7deg);
+                    z-index: -1;
+                }
+            }
+        }
+        .featured-content {
+            padding: 25px 20px 20px;
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+    }
+    .featured-btn{
+        .boxed-btn {
+            @extend %bgtransparent;
+            @extend %secondary-color;
+            @extend %secondary-border-color;
+            padding: 15px 25px;
+            margin-top: 40px;
+            &:hover {
+                @extend %secondary-bg-color;
+                @extend %black-color;
+            }
+        }
+    }
+}
+
+// .about-us-video-area
+.about-us-video-area {
+    @extend %backgroundimage;
+    height: 650px;
+    @extend %zindex2;
+    @include all-below-med{
+        height: 400px;
+    }
+    @include all-below-mobile-lg{
+        height: 270px;
+    }
+    &:after {
+        @extend %pseudo;
+        left: 0;
+        top: 0;
+        @extend %w100;
+        @extend %h100;
+        @extend %black-bg-color;
+        z-index: -1;
+        opacity: .3;
+    }
+    .section-title {
+        margin-top: 70px;
+        @extend %white-color;
+        font-size: 21px;
+        text-transform: inherit;
+        font-weight: 200;
+        @include all-below-med{
+            margin-top: 30px;
+        }
+        @include all-below-mobile-lg{
+            font-size: 18px;
+        }
+        h2 {
+            @extend %white-color;
+        }
+    }
+    .about-video-icon {
+        width: 90px;
+        height: 90px;
+        @extend %black-bg-color;
+        @extend %secondary-color;
+        text-align: center;
+        border: 4px solid #fff;
+        border-radius: 50%;
+        line-height: 84px;
+        font-size: 30px;
+        padding-left: 6px;
+        @extend %cursorpointer;
+        @extend %posabsolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        margin-top: -45px;
+        @extend %basetransition2;
+        @include all-below-mobile-lg{
+            width: 50px;
+            height: 50px;
+            border: 2px solid #fff;
+            line-height: 48px;
+            font-size: 20px;
+            margin-top: 20px;
+            padding-left: 3px;
+        }
+        &:hover {
+            @extend %secondary-bg-color;
+            @extend %secondary-border-color;
+            @extend %black-color;
+        }
+    }
+}
+
+// .about-us-area
+.about-us-area {
+    padding: 70px 0 60px;
+    font-size: 14px;
+    @include all-below-med{
+        padding: 50px 0 50px;
+    }
+    .section-title {
+        font-size: 21px;
+        font-weight: 200;
+        margin-bottom: 40px;
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
+        @include all-below-mobile-lg{
+            font-size: 18px;
+        }
+    }
+    img {
+        margin-bottom: 40px;
+    }
+    .text-box {
+        padding: 30px;
+        border: 1px solid #D6D6D6;
+        @include all-below-med{
+            padding: 20px;
+        }
+        a {
+            font-weight: 700;
+            @extend %primary-color;
+            &:hover{
+                @extend %secondary-color;
+            }
+        }
+    }
+}
+
+
