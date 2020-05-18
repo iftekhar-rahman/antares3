@@ -164,7 +164,7 @@
     color: #d6d6d6;
     @extend %basetransition1;
     @include mx-desktops {
-        padding: 44px 10px 45px;
+        padding: 44px 8px 45px;
     }
 }
 .mainmenu ul li:hover > a {
@@ -498,7 +498,7 @@
                     top: -64px;
                     height: 40px;
                 }
-                svg {
+                img {
                     @include all-below-med{
                         height: 65px;
                     }

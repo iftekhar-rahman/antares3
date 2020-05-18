@@ -1,16 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 43 43" style="enable-background:new 0 0 43 43;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#494848;}
-</style>
-<title>Artboard 1</title>
-<g>
-	<path class="st0" d="M27.9,20c-4.2,2.5-3.5,7.2-3,8.9c0,0,3.8-3.8,8.2-4.1l-8.7,8.7c-0.4,0.4-0.4,1.1,0,1.6c0.4,0.4,1.1,0.4,1.6,0
-		l2.4-2.4c0.9,0.8,3,2.5,5.9,2.5c3.7,0,8.4-7,8.4-17.9C42.6,17.3,33.9,16.6,27.9,20z"/>
-	<path class="st0" d="M35.4,14.1c0,0-2.2-7.3-7.4-8S14.4,5.1,10.9,7.3s-4.4,8.6-4.4,8.6H5c0,0-2.2-1.5-3.7-0.8s-1.4,4.4,2.2,4.4v2.2
-		c0,0-1.1-0.1-1.1,2.3s0,12.3,0,12.3s0,1.1,1.4,1.1s3.7,0,3.7,0s1.1-0.1,1.1-1s0-3.2,0-3.2h11.7l2-2.4c0,0-2-2.6-2-5.4
-		S23.3,14.1,35.4,14.1z M14.8,26.7c0,0-5,0-6.1,0s-2.2-1.5-1.6-3.2c0.7-1.7,3-1.8,5.4-0.5S14.8,26.7,14.8,26.7z"/>
-</g>
+<!-- Generator: Adobe Illustrator 10.0, SVG Export Plug-In . SVG Version: 3.0.0 Build 76)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg 
+	 xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" i:viewOrigin="247.416 456.4619" i:rulerOrigin="0 0" i:pageBounds="0 840 592 0"
+	 xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 width="98.168" height="73.925" viewBox="0 0 98.168 73.925" overflow="visible" enable-background="new 0 0 98.168 73.925"
+	 xml:space="preserve">
+	<title>Artboard 1</title>
+	<metadata>
+		<variableSets  xmlns="&ns_vars;">
+			<variableSet  varSetName="binding1" locked="none">
+				<variables></variables>
+				<v:sampleDataSets  xmlns="&ns_custom;" xmlns:v="&ns_vars;"></v:sampleDataSets>
+			</variableSet>
+		</variableSets>
+		<sfw  xmlns="&ns_sfw;">
+			<slices></slices>
+			<sliceSourceBounds  y="382.537" x="247.416" width="98.168" height="73.925" bottomLeftOrigin="true"></sliceSourceBounds>
+		</sfw>
+	</metadata>
+	<switch>
+		<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+			<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+			</i:pgfRef>
+		</foreignObject>
+		<g i:extraneous="self">
+			<g id="Layer_1" i:layer="yes" i:dimmedPercent="50" i:rgbTrio="#4F008000FFFF">
+				<g i:knockout="Off">
+					<path i:knockout="Off" fill="#E3A900" d="M63.75,33.459c-9.768,5.814-8.14,16.745-6.978,20.698c0,0,8.838-8.838,19.07-9.535
+						L55.61,64.854c-0.931,0.931-0.931,2.559,0,3.721c0.93,0.931,2.558,0.931,3.721,0l5.581-5.581
+						c2.094,1.86,6.978,5.813,13.722,5.813c8.604,0,19.534-16.278,19.534-41.627C97.936,27.18,77.703,25.552,63.75,33.459z"/>
+					<path i:knockout="Off" fill="#E3A900" d="M81.191,19.738c0,0-5.116-16.977-17.209-18.604S32.354-1.192,24.215,3.924
+						s-10.232,20-10.232,20h-3.488c0,0-5.116-3.488-8.604-1.86C-1.6,23.692-1.366,32.296,7.006,32.296v5.116
+						c0,0-2.559-0.232-2.559,5.349c0,5.581,0,28.604,0,28.604s0,2.559,3.256,2.559s8.604,0,8.604,0s2.559-0.232,2.559-2.326
+						c0-2.093,0-7.441,0-7.441h27.209l4.651-5.582c0,0-4.651-6.046-4.651-12.558S53.052,19.738,81.191,19.738z M33.284,49.04
+						c0,0-11.628,0-14.186,0c-2.559,0-5.116-3.488-3.721-7.441c1.628-3.953,6.977-4.186,12.558-1.162
+						C33.518,43.46,33.284,49.04,33.284,49.04z"/>
+				</g>
+			</g>
+		</g>
+	</switch>
+	<i:pgf  id="adobe_illustrator_pgf">
+		<![CDATA[
+		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
+		]]>
+	</i:pgf>
 </svg>
