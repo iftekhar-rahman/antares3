@@ -111,11 +111,12 @@
 
 
 // .car-slider-area
-.car-slider-area .slide-img{
+.car-bg{
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
     max-height: 800px;
     object-fit: contain;
-    height: auto;
-    // @extend %w100;
     @include tablet{
         width: auto;
         height: calc(100vh - 235px);
@@ -139,6 +140,35 @@
     @include mx-desktops{
         max-height: 500px;
     }
+}
+.car-slider-area .slide-img{
+    max-height: 800px;
+    object-fit: contain;
+    height: auto;
+    // @extend %w100;
+    // @include tablet{
+    //     width: auto;
+    //     height: calc(100vh - 235px);
+    // }
+    // @include desktops{
+    //     width: auto;
+    //     height: calc(100vh - 290px);
+    // }
+    // @include large-desktops{
+    //     width: auto;
+    //     height: calc(100vh - 311px);
+    // }
+    // @include large-desktops-mid{
+    //     width: auto;
+    //     height: calc(100vh - 311px);
+    // }
+    // @include extra-large-desktops{
+    //     width: auto;
+    //     height: calc(100vh - 311px);
+    // }
+    // @include mx-desktops{
+    //     max-height: 500px;
+    // }
 }
 .car-slider-area {
     .slide-shape {
