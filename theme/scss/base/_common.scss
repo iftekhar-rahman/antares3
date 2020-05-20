@@ -141,7 +141,7 @@ textarea {
 }
     
 /*=====owl nav customization======*/
-.owl-nav div {
+.owl-nav div{
     left: -45px;
     top: 50%;
     line-height: 65px;
@@ -164,7 +164,10 @@ textarea {
         left: -30px;
         width: 30px;
     }
-    &.owl-next {
+    @include all-below-med{
+        width: 30px;
+    }
+    &.owl-next, &.next {
         left: auto;
         right: -45px;
         border-radius: 0px 5px 5px 0px;
@@ -179,6 +182,33 @@ textarea {
     }
     &:hover {
         @extend %primary-color;
+    }
+}
+
+// .flickity plugin arrow style
+.flickity-button {
+    position: absolute;
+    border: 0;
+    opacity: .8;
+    filter: invert(2);
+    background-color: transparent !important;
+    &.flickity-prev-next-button {
+        top: 50%;
+        width: 44px;
+        height: 44px;
+        transform: translateY(-50%);
+        &.previous {
+            left: 5%;
+            @include all-below-med{
+                left: 2%;
+            }
+        }
+        &.next {
+            right: 5% !important;
+            @include all-below-med{
+                right: 2% !important;
+            }
+        }
     }
 }
 

@@ -42,6 +42,7 @@
 //     }
 // }
 
+
 // .call-to-action-area
 .footer-area.vdp-page.sticky-action {
     margin-bottom: 70px;
@@ -75,6 +76,14 @@
         @include mx-desktops{
             font-size: 14px;
         }
+        @include all-below-med{
+            margin-bottom: 15px;
+        }
+    }
+    .right{
+        @include all-below-med{
+            justify-content: space-between !important;
+        }
     }
     .price-tag {
         @extend %displayblock;
@@ -105,72 +114,21 @@
                     margin-left: 0;
                 }
             }
+            @include all-below-med{
+                padding: 7px 10px;
+                i{
+                    margin-left: 0;
+                }
+            }
         }
     }
 }
 
 
-// .car-slider-area
-.car-bg{
-    background-size: cover;
-    background-position: center;
-    background-color: #ddd;
-    max-height: 800px;
-    object-fit: contain;
-    @include tablet{
-        width: auto;
-        height: calc(100vh - 235px);
-    }
-    @include desktops{
-        width: auto;
-        height: calc(100vh - 290px);
-    }
-    @include large-desktops{
-        width: auto;
-        height: calc(100vh - 311px);
-    }
-    @include large-desktops-mid{
-        width: auto;
-        height: calc(100vh - 311px);
-    }
-    @include extra-large-desktops{
-        width: auto;
-        height: calc(100vh - 311px);
-    }
-    @include mx-desktops{
-        max-height: 500px;
-    }
-}
-.car-slider-area .slide-img{
-    max-height: 800px;
-    object-fit: contain;
-    height: auto;
-    // @extend %w100;
-    // @include tablet{
-    //     width: auto;
-    //     height: calc(100vh - 235px);
-    // }
-    // @include desktops{
-    //     width: auto;
-    //     height: calc(100vh - 290px);
-    // }
-    // @include large-desktops{
-    //     width: auto;
-    //     height: calc(100vh - 311px);
-    // }
-    // @include large-desktops-mid{
-    //     width: auto;
-    //     height: calc(100vh - 311px);
-    // }
-    // @include extra-large-desktops{
-    //     width: auto;
-    //     height: calc(100vh - 311px);
-    // }
-    // @include mx-desktops{
-    //     max-height: 500px;
-    // }
-}
 .car-slider-area {
+    background-color: #333;
+    overflow: hidden;
+    // .slide-shape
     .slide-shape {
         @extend %posabsolute;
         left: 0;
@@ -185,6 +143,9 @@
         z-index: 3;
         padding-top: 6px;
         width: 480px;
+        @include all-below-mobile-lg{
+            width: 100%;
+        }
         a {
             display: inline-block !important;
             @extend %white-color;
@@ -198,38 +159,56 @@
             }
         }
     }
-    .single-car-slide{
-        a{
-            @extend %displayblock;
-        } 
-        &:after {
-            @extend %pseudo;
-            left: 0;
-            top: 0;
-            @extend %w100;
-            @extend %h100;
-            @extend %black-bg-color;
-            z-index: 1;
-            opacity: .7;
+    // .slider-carousel
+    .slider-carousel{
+        overflow: hidden;
+        opacity: 0;
+        &.flickity-enabled {
+            overflow: hidden;
+            height: auto;
+            opacity: 1;
         }
-    }
-    .owl-item.active {
         .single-car-slide{
-            .slide-img{
-                // object-fit: contain;
+            @include all-below-med{
+                width: 100%;
+                .popup-link{
+                    width: 100%;
+                }
             }
-            &:after{
-                opacity: 0;
+            a{
+                @extend %displayblock;
+            } 
+            &.is-selected {
+                img{
+                    filter: brightness(1);
+                }
             }
         }
-    }
-    .owl-nav div {
-        left: 0;
-        border-radius: 0 5px 5px 0;
-        &.owl-next{
-            left: auto;
-            right: 0;
-            border-radius: 5px 0px 0px 5px;
+        .slide-img{
+            max-height: 800px;
+            object-fit: cover;
+            max-width: none;
+            width: 100%;;
+            height: auto;
+            transition: all 0.4s ease-in-out;
+            filter: brightness(0.5);
+            display: block;
+            @include desktops{
+                width: auto;
+                height: calc(100vh - 290px);
+            }
+            @include large-desktops{
+                width: auto;
+                height: calc(100vh - 311px);
+            }
+            @include large-desktops-mid{
+                width: auto;
+                height: calc(100vh - 311px);
+            }
+            @include extra-large-desktops{
+                width: auto;
+                height: calc(100vh - 311px);
+            }
         }
     }
 }
@@ -255,9 +234,16 @@
                 @extend %uppercase;
                 font-weight: 700;
                 font-size: 14px;
-                padding: 16px 5px;
+                padding: 16px 0px;
+                @include all-below-med{
+                    font-size: 12px;
+                }
                 img {
                     margin: -4px 6px 0px 0;
+                    @include all-below-med{
+                        margin: -4px 3px 0px 0;
+                        max-width: 15px;
+                    }
                 }
             }
         }
@@ -268,8 +254,11 @@
     .submenu-area {
         margin-top: 90px;
         z-index: 9 !important;
+        @include all-below-med{
+            margin-top: 85px;
+        }
         li a {
-            padding: 12px;
+            padding: 12px 0;
         }
     }
 }
@@ -279,6 +268,9 @@
 // specification-area
 .specification-area{
     padding: 50px 0 60px;
+    @include all-below-med{
+        padding: 40px 0 20px;
+    }
     .table-content-wrap {
         .section-title {
             margin-bottom: 45px;
@@ -380,15 +372,27 @@
                 height: 70px;
             }
         }
+        @include all-below-med{
+            bottom: -111px !important;
+            img{
+                height: 52px;
+            }
+        }
     }
     .car-valuation-content {
         @extend %black-bg-color;
         color: #a5a4a4;
         @extend %borderradius5;
         padding: 25px 70px;
+        @include mx-tablet{
+            padding: 25px 30px;
+        }
         .single-valuation-item {
             flex-basis: 40%;
             padding-right: 15px;
+            @include mx-tablet{
+                flex-basis: 37%;
+            }
             &:last-child {
                 padding-right: 0;
             }
@@ -409,6 +413,9 @@
             }
             &.value-btn {
                 flex-basis: 20%;
+                @include mx-tablet{
+                    flex-basis: 26%;
+                }
                 .boxed-btn {
                     @extend %secondary-bg-color;
                     padding: 11px 10px;
@@ -448,6 +455,9 @@
     @extend %black-bg-color;
     padding: 120px 0 60px;
     @extend %white-color;
+    @include all-below-med{
+        padding: 90px 0 50px;
+    }
     .section-title {
         @extend %posabsolute;
         left: 0;
@@ -457,12 +467,18 @@
         @include mx-desktops{
             top: -112px;
         }
+        @include all-below-med{
+            top: -90px;
+        }
     }
     // .single-finance-dropdown
     .single-finance-dropdown {
         flex-basis: 33.333%;
         padding-right: 15px;
         margin-bottom: 80px;
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
         &:last-child {
             padding-right: 0;
         }
@@ -481,6 +497,9 @@
     // .finance-table
     .finance-table{
         margin-bottom: 50px;
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
         .single-table-item{
             border-color: #373B44;
             .table {
@@ -502,6 +521,10 @@
         // .finance-btns
         .finance-btns {
             padding-top: 50px;
+            @include all-below-med{
+                padding-top: 0;
+                padding-bottom: 30px;
+            }
             .boxed-btn {
                 @extend %secondary-color;
                 @extend %secondary-border-color;
@@ -522,6 +545,9 @@
         // .right-content
         .right-content {
             font-size: 13px;
+            @include all-below-med{
+                text-align: center;
+            }
             h6 {
                 @extend %uppercase;
                 font-weight: 300;
@@ -562,13 +588,16 @@
         font-size: 14px;
         opacity: .7;
         line-height: 25px;
+        @include all-below-med{
+            text-align: center;
+        }
     }
 }
 
 // .testimonial-area
 .testimonial-area {
     @include all-below-med{
-        padding: 30px 0 150px;
+        padding: 40px 0 50px;
     }
     .section-title {
         margin-bottom: 40px;
@@ -664,17 +693,31 @@
     .section-title{
         padding-top: 80px;
         border-top: 1px solid #D6D6D6;
+        @include all-below-med{
+            margin-top: 50px;
+        }
         h2{
             margin-bottom: 60px;
+            @include all-below-med{
+                margin-bottom: 30px;
+            }
         }
     }
     .single-gallery-content {
         overflow: hidden;
+        @include all-below-med{
+            margin-left: -10px;
+        }
     }
     .single-gallery-item.large-gallery-item {
         width: 46%;
         height: 470px;
         padding-left: 0;
+        @include all-below-med{
+            width: 100%;
+            height: 400px;
+            margin-left: 10px;
+        }
     }
     .single-gallery-item {
         float: left;
@@ -682,6 +725,9 @@
         padding-left: 10px;
         margin-bottom: 10px;
         height: 230px;
+        @include all-below-med{
+            width: 50%;
+        }
         a{
             @extend %backgroundimage;
             @extend %zindex2;

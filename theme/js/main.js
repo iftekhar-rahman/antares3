@@ -302,50 +302,114 @@
             autoHeight: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
+
+ // Flickity sliders
+
+
+var truncates = $('.single-car-slide');
+
+if (truncates.length) { // here you validate if there is any element with that class
+
+    // Gallery Carousel
+    var $gallerySlider = $(".slider-carousel").flickity({
+        prevNextButtons: true,
+        pageDots: false,
+        wrapAround: true,
+        cellAlign: "center",
+        percentPosition: true,
+        dragThreshold: 5,
+        lazyLoad: true,
+        lazyLoad: 1
+    });
+
+    // $('.open-popup').on('click', function () {
+    //     $('.slider-carousel .is-selected .popup-link').click();
+    // });
+    // $('.popup-link').magnificPopup({
+    //     type: 'image',
+    //     gallery: {
+    //         enabled: true,
+    //     },
+    // });
+
+    
+
+    // Gallery "zoomed"
+    // $(".overlay-carousel").flickity({
+    //     asNavFor: ".slider-carousel",
+    //     contain: true,
+    //     pageDots: false,
+    //     prevNextButtons: false
+    // });
+
+    // Zoom gallery
+    // $(".gallery-zoom").featherlightGallery({
+    //     gallery: {
+    //     fadeIn: 300,
+    //     fadeOut: 300
+    // },
+    //     openSpeed: 300,
+    //     closeSpeed: 300
+    // });
+}
+
+
+        // $('.main-carousel').flickity({
+        //     cellAlign: "center",
+        //     wrapAround: true,
+        //     freeScroll: true,
+
+        //     prevNextButtons: false,
+        //     pageDots: false,
+        //     percentPosition: false,
+        //     dragThreshold: 5,
+        //     lazyLoad: true,
+        //     lazyLoad: 1
+        // });
         
         // slider-carousel
-        $('.slider-carousel').owlCarousel({
-            stagePadding: 200,
-            loop:true,
-            dots:false,
-            nav:true,
-            items:1,
-            lazyLoad: true,
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            responsive:{
-                0:{
-                    items:1,
-                    stagePadding: 60
-                },
-                600:{
-                    items:1,
-                    stagePadding: 100
-                },
-                1000:{
-                    items:1,
-                    stagePadding: 200
-                },
-                1200:{
-                    items:1,
-                    stagePadding: 250
-                },
-                1400:{
-                    items:1,
-                    stagePadding: 300
-                },
-                1600:{
-                    items:1,
-                    stagePadding: 350
-                },
-                1800:{
-                    items:1,
-                    stagePadding: 400
-                },
-                2000:{
-                    stagePadding: 450
-                },
-            }
-        });
+        // $('.slider-carousel').owlCarousel({
+        //     stagePadding: 200,
+        //     loop:true,
+        //     dots:false,
+        //     nav:true,
+        //     items:1,
+        //     lazyLoad: true,
+        //     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        //     responsive:{
+        //         0:{
+        //             items:1,
+        //             stagePadding: 60
+        //         },
+        //         600:{
+        //             items:1,
+        //             stagePadding: 100
+        //         },
+        //         1000:{
+        //             items:1,
+        //             stagePadding: 200
+        //         },
+        //         1200:{
+        //             items:1,
+        //             stagePadding: 250
+        //         },
+        //         1400:{
+        //             items:1,
+        //             stagePadding: 300
+        //         },
+        //         1600:{
+        //             items:1,
+        //             stagePadding: 350
+        //         },
+        //         1800:{
+        //             items:1,
+        //             stagePadding: 400
+        //         },
+        //         2000:{
+        //             stagePadding: 450
+        //         },
+        //     }
+        // });
 
         // magnificPopup for video
         $('.video-btn').magnificPopup({
@@ -376,9 +440,13 @@
                 srcAction: 'iframe_src',
               }
         });
+
+
+        // Code by Shajal
+        
         // magnificPopup for images
         $('.open-popup').on('click', function () {
-			$('.slider-carousel .owl-item.active .popup-link').click();
+            $('.slider-carousel .single-car-slide.is-selected .popup-link').click();
 		});
 		$('.popup-link').magnificPopup({
 			type: 'image',
@@ -386,6 +454,9 @@
 				enabled: true,
 			},
         });
+
+
+
         $('.popup-link2').magnificPopup({
             type: 'image',
             gallery: {
