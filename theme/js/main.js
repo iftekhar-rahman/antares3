@@ -203,7 +203,7 @@
             var $gallerySlider = $(".slider-carousel").flickity({
                 prevNextButtons: true,
                 pageDots: false,
-                freeScroll: true,
+                // freeScroll: true,
                 wrapAround: true,
                 cellAlign: "center",
                 percentPosition: true,
