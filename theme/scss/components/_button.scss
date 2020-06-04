@@ -14,7 +14,7 @@
     font-size: 14px;
     letter-spacing: 1px;
     @include all-below-mobile-lg{
-        padding: 10px 30px;
+        padding: 12px 30px;
     }
     &:hover {
         @extend %white-color;

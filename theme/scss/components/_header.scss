@@ -293,7 +293,7 @@
     width: 720px;
     z-index: 99;
     height: 0;
-    span.slicknav_menutxt {
+    .slicknav_menutxt {
         @extend %displaynone;
     }
     .slicknav_btn {

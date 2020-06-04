@@ -189,9 +189,12 @@ textarea {
 .flickity-button {
     position: absolute;
     border: 0;
-    opacity: .8;
+    opacity: .7;
     filter: invert(2);
     background-color: transparent !important;
+    &:hover{
+        opacity: 1;
+    }
     &.flickity-prev-next-button {
         top: 50%;
         width: 44px;
@@ -202,11 +205,17 @@ textarea {
             @include all-below-med{
                 left: 2%;
             }
+            @include all-below-mobile-lg{
+                left: 1% !important;
+            }
         }
         &.next {
             right: 5% !important;
             @include all-below-med{
                 right: 2% !important;
+            }
+            @include all-below-mobile-lg{
+                right: 1% !important;
             }
         }
     }

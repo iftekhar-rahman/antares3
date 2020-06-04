@@ -46,6 +46,9 @@
 // .call-to-action-area
 .footer-area.vdp-page.sticky-action {
     margin-bottom: 70px;
+    @include all-below-mobile-lg{
+        margin-bottom: 0;
+    }
 }
 .call-to-action-area.sticky-action {
     @extend %w100;
@@ -55,21 +58,27 @@
     box-shadow: 0 8px 15px #000;
     z-index: 9;
     padding: 5px 0;
-    h2{
-        font-size: 26px;
+    @include all-below-mobile-lg{
+        position: relative;
+        box-shadow: none;
+        padding: 15px 0;
+        z-index: inherit;
     }
 }
 .call-to-action-area {
-    background-color: #f8f2e0;
-    padding: 15px 0;
+    background-color: #FCF6E6;
+    padding: 30px 0 20px;
+    @include all-below-mobile-lg{
+        padding: 20px 0;
+    }
     h2 {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 600;
         @extend %black-color;
         margin: 0px 0 5px;
-        @include mx-desktops{
-            font-size: 24px;
-        }
+        // @include all-below-mobile-lg{
+        //     font-size: 22px;
+        // }
     }
     .left {
         font-weight: 400;
@@ -79,10 +88,18 @@
         @include all-below-med{
             margin-bottom: 15px;
         }
+        @include all-below-mobile-lg{
+            margin-bottom: 10px;
+            text-align: center;
+        }
     }
     .right{
         @include all-below-med{
             justify-content: space-between !important;
+        }
+        @include all-below-mobile-lg{
+            flex-wrap: wrap;
+            justify-content: center !important;
         }
     }
     .price-tag {
@@ -93,9 +110,11 @@
         @include mx-desktops{
             margin-right: 5px;
         }
+        @include all-below-mobile-lg{
+            margin: 0 0 10px 0;
+        }
         strong {
             font-weight: 700;
-            @extend %secondary-color;
             font-size: 20px;
             @include mx-desktops{
                 font-size: 17px;
@@ -120,11 +139,23 @@
                     margin-left: 0;
                 }
             }
+            @include all-below-mobile-lg{
+                margin: 0 5px;
+            }
+            @include all-mx-mobile{
+                margin: 0 2px;
+                padding: 7px 5px;
+            }
         }
     }
 }
 
-
+// .car-slider-area
+.mfp-counter {
+    left: 0;
+    right: 0;
+    text-align: center;
+}
 .car-slider-area {
     background-color: #333;
     overflow: hidden;
@@ -146,6 +177,9 @@
         @include all-below-mobile-lg{
             width: 100%;
         }
+        @include all-mx-mobile{
+            height: 39px;
+        }
         a {
             display: inline-block !important;
             @extend %white-color;
@@ -156,6 +190,9 @@
             @extend %basetransition1;
             &:hover{
                 @extend %secondary-color;
+            }
+            @include all-below-mobile-lg{
+                padding: 6px 10px;
             }
         }
     }
@@ -199,15 +236,15 @@
             }
             @include large-desktops{
                 width: auto;
-                height: calc(100vh - 311px);
+                height: calc(100vh - 324px);
             }
             @include large-desktops-mid{
                 width: auto;
-                height: calc(100vh - 311px);
+                height: calc(100vh - 324px);
             }
             @include extra-large-desktops{
                 width: auto;
-                height: calc(100vh - 311px);
+                height: calc(100vh - 324px);
             }
         }
     }
@@ -222,12 +259,24 @@
     ul {
         @extend %displayflex;
         @extend %justifybetween;
+        @include all-below-mobile-lg{
+            
+        }
+        @include all-mx-mobile{
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 5px 0;
+        }
         li {
             flex-basis: 33.3333%;
             @extend %textcenter;
             border-right: 1px solid #000000;
             &:last-child {
                 border-right: 0;
+            }
+            @include all-below-mobile-lg{
+                flex-basis: auto;
+                border: 0;
             }
             a {
                 @extend %primary-color;
@@ -237,6 +286,9 @@
                 padding: 16px 0px;
                 @include all-below-med{
                     font-size: 12px;
+                }
+                @include all-mx-mobile{
+                    padding: 10px 15px;
                 }
                 img {
                     margin: -4px 6px 0px 0;
@@ -259,6 +311,9 @@
         }
         li a {
             padding: 12px 0;
+            @include all-mx-mobile{
+                padding: 10px 15px;
+            }
         }
     }
 }
@@ -359,6 +414,10 @@
 // .car-valuation-area
 .car-valuation-area {
     padding: 0 0 60px;
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .section-title {
         h2 {
             margin-bottom: 20px;
@@ -378,20 +437,41 @@
                 height: 52px;
             }
         }
+        @include all-below-mobile-lg{
+            bottom: -105px !important;
+        }
+        @include all-mx-mobile{
+            bottom: -98px!important;
+        }
     }
     .car-valuation-content {
         @extend %black-bg-color;
         color: #a5a4a4;
-        @extend %borderradius5;
-        padding: 25px 70px;
+        padding: 25px 0px;
         @include mx-tablet{
             padding: 25px 30px;
+        }
+        @include all-below-mobile-lg{
+            padding: 20px 15px;
+        }
+        .car-valuation{
+            @include all-mx-mobile{
+                flex-wrap: wrap;
+                .single-valuation-item{
+                    flex-basis: 100%;;
+                    margin-bottom: 15px;
+                }
+            }
         }
         .single-valuation-item {
             flex-basis: 40%;
             padding-right: 15px;
             @include mx-tablet{
                 flex-basis: 37%;
+            }
+            @include all-below-mobile-lg{
+                flex-basis: 36%;
+                padding-right: 5px;
             }
             &:last-child {
                 padding-right: 0;
@@ -416,14 +496,25 @@
                 @include mx-tablet{
                     flex-basis: 26%;
                 }
+                @include all-below-mobile-lg{
+                    flex-basis: 28%;
+                }
+                @include all-mx-mobile{
+                    margin: 0 auto;
+                    flex-basis: 50%;
+                }
                 .boxed-btn {
                     @extend %secondary-bg-color;
-                    padding: 11px 10px;
+                    padding: 11px 5px;
                     @extend %w100;
                     @extend %secondary-border-color;
                     &:hover {
                         @extend %bgtransparent;
                         @extend %secondary-color;
+                    }
+                    @include all-below-mobile-lg{
+                        padding: 12px 5px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -458,6 +549,9 @@
     @include all-below-med{
         padding: 90px 0 50px;
     }
+    @include all-below-mobile-lg{
+        padding: 70px 0 50px;
+    }
     .section-title {
         @extend %posabsolute;
         left: 0;
@@ -470,6 +564,12 @@
         @include all-below-med{
             top: -90px;
         }
+        @include all-below-mobile-lg{
+            top: -77px;
+        }
+        @include all-mx-mobile{
+            top: -88px;
+        }
     }
     // .single-finance-dropdown
     .single-finance-dropdown {
@@ -478,6 +578,11 @@
         margin-bottom: 80px;
         @include all-below-med{
             margin-bottom: 30px;
+        }
+        @include all-mx-mobile{
+            flex-basis: 100%;
+            padding-right: 0;
+            margin-bottom: 15px;
         }
         &:last-child {
             padding-right: 0;
@@ -499,6 +604,9 @@
         margin-bottom: 50px;
         @include all-below-med{
             margin-bottom: 30px;
+        }
+        @include all-mx-mobile{
+            margin-top: 20px;
         }
         .single-table-item{
             border-color: #373B44;
@@ -528,8 +636,20 @@
             .boxed-btn {
                 @extend %secondary-color;
                 @extend %secondary-border-color;
-                width: 32%;
+                flex-basis: 32%;
                 padding: 15px 10px;
+                @include all-below-mobile-lg{
+                    flex-basis: auto;
+                    padding: 12px 10px;
+                    font-size: 13px;
+                    i{
+                        margin-left: 0;
+                    }
+                }
+                @include all-mx-mobile{
+                    flex-basis: 100%;
+                    margin-bottom: 10px;
+                }
                 &:hover {
                     @extend %secondary-bg-color;
                     @extend %black-color;
@@ -597,7 +717,7 @@
 // .testimonial-area
 .testimonial-area {
     @include all-below-med{
-        padding: 40px 0 50px;
+        padding: 50px 0 50px;
     }
     .section-title {
         margin-bottom: 40px;
@@ -694,7 +814,7 @@
         padding-top: 80px;
         border-top: 1px solid #D6D6D6;
         @include all-below-med{
-            margin-top: 50px;
+            padding-top: 50px;
         }
         h2{
             margin-bottom: 60px;
@@ -718,6 +838,9 @@
             height: 400px;
             margin-left: 10px;
         }
+        @include all-below-mobile-lg{
+            height: 250px;
+        }
     }
     .single-gallery-item {
         float: left;
@@ -727,6 +850,9 @@
         height: 230px;
         @include all-below-med{
             width: 50%;
+        }
+        @include all-below-mobile-lg{
+            height: 200px;
         }
         a{
             @extend %backgroundimage;

@@ -8,6 +8,7 @@
             });
         });
 
+        // Ooffcanvas-menu-js
         $(".trigger").on("click", function(){
             $(".offcanvas-menu-wrap, .off-canvas-overlay, .menu-close").addClass("active");
             return false;
@@ -16,71 +17,9 @@
             $(".offcanvas-menu-wrap, .off-canvas-overlay, .menu-close").removeClass("active");
         });
 
-
-        // Testimonials Page JS
-        // var spansCounts =  $('#rating .single-star').length
-        // $('#rating .single-star').on('click', function(e) {
-        //     console.log($(this).index())
-        //     $('#rating .single-star').removeClass('active');
-
-        //     for(var i=0 ; i < $(this).index() + 1; i++){
-        //         $('#rating .single-star').eq(i).addClass('active')
-        //     }
-        // })
-        // $('.single-star').click(function () {
-        //     $('.single-star').removeClass('show-arrow');
-        //     $(this).addClass('show-arrow');
-        // });
-        // ends
-
-        
-        // if($('#finanace').offset() !== undefined){
-        //     $('html, body').animate({
-        //         scrollTop: $('#finanace').offset().top,
-        //     }, 'slow');
-        // }
-        
-        // Code for alert boxes on search section
-        // $(".make").change(function(){
-        //     var make = $(".make").val();
-        //     alert("you have selected: " + make);   
-        // });
-        // $('.model').change(function(){
-        //     var model = $(".model").val();
-        //     alert("you have selected: " + model);   
-        // });
-        // $('.type').change(function(){
-        //     var type = $(".type").val();
-        //     alert("you have selected: " + type);   
-        // });
-        // $('.age').change(function(){
-        //     var age = $(".age").val();
-        //     alert("you have selected: " + age);   
-        // });
-
-        // $(".switch input[type='checkbox']").change(function(){
-        //     if(this.checked){
-        //         alert("You have selected monthly payment.");
-        //     } else {
-        //         alert("You have selected Cash Price.")
-        //     }
-        // })
-
-        // $('.view-btn .boxed-btn').click(function(){
-        //     var make = $(".make").val();
-        //     var model = $(".model").val();
-        //     var type = $(".type").val();
-        //     var age = $(".age").val();
-        //     var switcher = $(".switch input[type='checkbox'").val();
-        //     alert('You have submitted: \n' + "\nMake: " + make + "\nModel: " + model + "\nType: " + type + "\nAge: " + age + "\nPayment: " + switcher);
-        // });
-
         /*-----------------------------------------
                      Home Page JS
         -----------------------------------------*/ 
-        // $(".switch-slider").on("click", function(){
-        //     $(this).toggleClass("active");
-        // });
         // responsive menu
         $('#menu').slicknav();
         
@@ -98,51 +37,6 @@
                 $('.header-area').removeClass('fixed');
             }
         })
-    
-        /*---------- Double handle Range Slider  ----------*/
-        // $(function () {
-        //     $("#range-slider-1").slider({
-        //         range: true,
-        //         min: 0,
-        //         max: 5000,
-        //         step: 100,
-        //         values: [500, 5000],
-        //         slide: function (event, ui) {
-        //             $('.amount1').val("£" + ui.values[0]);
-        //             $('.amount2').val("£" + ui.values[1]);
-        //         },
-        //         stop: function( event, ui ) {
-        //             alert("Your Min Value: " + ui.values[0] +"\n" +  "Your Max Value: " + ui.values[1]);
-
-        //         }
-        //     });
-        //     $('.amount1').val("£" + $("#range-slider-1").slider("values", 0));
-        //     $('.amount2').val("£" + $("#range-slider-1").slider("values", 1));
-        // });
-
-        /*---------- Single Handle Range Slider  ----------*/
-        // $(function () {
-        //     var handle = $("#custom-handle");
-        //     $("#range-slider-2").slider({
-        //         range: "max",
-        //         value: 200,
-        //         min: 150,
-        //         max: 250,
-        //         step: 1,
-        //         prefix: "£",
-        //         create: function() {
-        //             handle.text( $( this ).slider( "value" ) );
-        //         },
-        //         slide: function( event, ui ) {
-        //             handle.text( ui.value );
-        //         },
-        //         stop: function( event, ui ) {
-        //             alert("Car finance slider value is =" + ui.value);
-
-        //         }
-        //     });
-        // });
-
         // homepage-slides
         $(".homepage-slides").owlCarousel({
             items: 1,
@@ -302,115 +196,36 @@
             autoHeight: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
-
- // Flickity sliders
-
-
-var truncates = $('.single-car-slide');
-
-if (truncates.length) { // here you validate if there is any element with that class
-
-    // Gallery Carousel
-    var $gallerySlider = $(".slider-carousel").flickity({
-        prevNextButtons: true,
-        pageDots: false,
-        wrapAround: true,
-        cellAlign: "center",
-        percentPosition: true,
-        dragThreshold: 5,
-        lazyLoad: true,
-        lazyLoad: 1
-    });
-
-    // $('.open-popup').on('click', function () {
-    //     $('.slider-carousel .is-selected .popup-link').click();
-    // });
-    // $('.popup-link').magnificPopup({
-    //     type: 'image',
-    //     gallery: {
-    //         enabled: true,
-    //     },
-    // });
-
-    
-
-    // Gallery "zoomed"
-    // $(".overlay-carousel").flickity({
-    //     asNavFor: ".slider-carousel",
-    //     contain: true,
-    //     pageDots: false,
-    //     prevNextButtons: false
-    // });
-
-    // Zoom gallery
-    // $(".gallery-zoom").featherlightGallery({
-    //     gallery: {
-    //     fadeIn: 300,
-    //     fadeOut: 300
-    // },
-    //     openSpeed: 300,
-    //     closeSpeed: 300
-    // });
-}
-
-
-        // $('.main-carousel').flickity({
-        //     cellAlign: "center",
-        //     wrapAround: true,
-        //     freeScroll: true,
-
-        //     prevNextButtons: false,
-        //     pageDots: false,
-        //     percentPosition: false,
-        //     dragThreshold: 5,
-        //     lazyLoad: true,
-        //     lazyLoad: 1
-        // });
-        
-        // slider-carousel
-        // $('.slider-carousel').owlCarousel({
-        //     stagePadding: 200,
-        //     loop:true,
-        //     dots:false,
-        //     nav:true,
-        //     items:1,
-        //     lazyLoad: true,
-        //     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        //     responsive:{
-        //         0:{
-        //             items:1,
-        //             stagePadding: 60
-        //         },
-        //         600:{
-        //             items:1,
-        //             stagePadding: 100
-        //         },
-        //         1000:{
-        //             items:1,
-        //             stagePadding: 200
-        //         },
-        //         1200:{
-        //             items:1,
-        //             stagePadding: 250
-        //         },
-        //         1400:{
-        //             items:1,
-        //             stagePadding: 300
-        //         },
-        //         1600:{
-        //             items:1,
-        //             stagePadding: 350
-        //         },
-        //         1800:{
-        //             items:1,
-        //             stagePadding: 400
-        //         },
-        //         2000:{
-        //             stagePadding: 450
-        //         },
-        //     }
-        // });
-
+        // Flickity sliders
+        var truncates = $('.single-car-slide');
+        if (truncates.length) { // here you validate if there is any element with that class
+            // Gallery Carousel
+            var $gallerySlider = $(".slider-carousel").flickity({
+                prevNextButtons: true,
+                pageDots: false,
+                wrapAround: true,
+                cellAlign: "center",
+                percentPosition: true,
+                dragThreshold: 5,
+                lazyLoad: true,
+                // imagesLoaded: true,
+                lazyLoad: 1
+            });
+        }
+        // magnificPopup for images
+        $('.open-popup').on('click', function () {
+            $('.slider-carousel .single-car-slide.is-selected .popup-link').click();
+        });
+        $('.popup-link').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true,
+            },
+        });
+        $('.popup-link-inner img').on('click', function (e) {
+			e.preventDefault();
+			e.stopPropagation();
+		});
         // magnificPopup for video
         $('.video-btn').magnificPopup({
             type : 'iframe',
@@ -440,23 +255,6 @@ if (truncates.length) { // here you validate if there is any element with that c
                 srcAction: 'iframe_src',
               }
         });
-
-
-        // Code by Shajal
-        
-        // magnificPopup for images
-        $('.open-popup').on('click', function () {
-            $('.slider-carousel .single-car-slide.is-selected .popup-link').click();
-		});
-		$('.popup-link').magnificPopup({
-			type: 'image',
-			gallery: {
-				enabled: true,
-			},
-        });
-
-
-
         $('.popup-link2').magnificPopup({
             type: 'image',
             gallery: {
@@ -537,13 +335,6 @@ if (truncates.length) { // here you validate if there is any element with that c
         $(".sidebar-close, .single-dropdown-item.age, .single-dropdown-item.years-dropdown, .refine-close, .single-color").on("click", function(){
             $(".search-body.pane").addClass("inactive");
         });
-
-        // $(".refine-text").on("click", function(){
-        //     $(".refine-search-box").css("left", "0px");
-        // });
-        // $(".refine-close").on("click", function(){
-        //     $(".refine-search-box").css("left", "-300px");
-        // });
 
         $(".refine-text").on("click", function(){
             $(".footer").removeClass("footer-margin");
