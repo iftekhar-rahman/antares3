@@ -208,7 +208,7 @@
                 percentPosition: true,
                 dragThreshold: 5,
                 lazyLoad: true,
-                imagesLoaded: true,
+                // imagesLoaded: true,
                 lazyLoad: 1
             });
         }
