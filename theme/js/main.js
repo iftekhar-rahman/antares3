@@ -197,21 +197,32 @@
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
         // Flickity sliders
-        var truncates = $('.single-car-slide');
-        if (truncates.length) { // here you validate if there is any element with that class
-            // Gallery Carousel
-            var $gallerySlider = $(".slider-carousel").flickity({
-                prevNextButtons: true,
-                pageDots: false,
-                wrapAround: true,
-                cellAlign: "center",
-                percentPosition: true,
-                dragThreshold: 5,
-                lazyLoad: true,
-                imagesLoaded: true,
-                lazyLoad: 1
-            });
-        }
+        // var truncates = $('.single-car-slide');
+        // if (truncates.length) { // here you validate if there is any element with that class
+        //     // Gallery Carousel
+        //     var $gallerySlider = $(".slider-carousel").flickity({
+        //         prevNextButtons: true,
+        //         pageDots: false,
+        //         wrapAround: true,
+        //         cellAlign: "center",
+        //         percentPosition: true,
+        //         dragThreshold: 5,
+        //         lazyLoad: true,
+        //         imagesLoaded: true,
+        //         lazyLoad: 1
+        //     });
+        // }
+        $('.slider-carousel').flickity({
+            prevNextButtons: true,
+            pageDots: false,
+            wrapAround: true,
+            cellAlign: "center",
+            percentPosition: true,
+            dragThreshold: 5,
+            lazyLoad: true,
+            imagesLoaded: true,
+            lazyLoad: 1
+        });
         // magnificPopup for images
         $('.open-popup').on('click', function () {
             $('.slider-carousel .single-car-slide.is-selected .popup-link').click();
